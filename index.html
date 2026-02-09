@@ -2,35 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Event Dashboard</title>
+    <title>My Event Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Event Dashboard</h1>
 
-<div>
+<div class="top-box">
     <h2>Add Event</h2>
 
     <input type="text" id="name" placeholder="Event name">
     <input type="date" id="date">
 
     <select id="type">
-        <option>Study</option>
-        <option>Sports</option>
-        <option>Personal</option>
+        <option value="Study">Study</option>
+        <option value="Sports">Sports</option>
+        <option value="Personal">Personal</option>
     </select>
 
-    <textarea id="info" placeholder="Event details"></textarea>
+    <textarea id="info" placeholder="Write something about event"></textarea>
 
     <button id="addBtn">Add Event</button>
 </div>
 
-<h2>Your Events</h2>
-<div id="list"></div>
-    
+<h2 class="heading">Your Events</h2>
+<div id="list" class="cards"></div>
+
 <script src="script.js"></script>
-
 </body>
-
 </html>
+
