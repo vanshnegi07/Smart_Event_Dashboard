@@ -1,29 +1,102 @@
 body {
-    font-family: Arial;
-    background-color: #f2f2f2;
-    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edf3;
+    margin: 0;
+    padding: 30px;
 }
 
+/* Title */
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-input, select, textarea {
-    display: block;
-    width: 300px;
-    margin-top: 10px;
-    padding: 8px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 8px;
-    width: 150px;
-}
-
-#list div {
+/* Top form box */
+.top-box {
     background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 6px;
+    border: 1px solid #ccc;
 }
+
+/* Button */
+button {
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Events section title */
+.heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Cards container as grid */
+.cards {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Event card */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #333;
+    position: relative;
+}
+
+/* Delete button */
+.remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 4px 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Done button */
+.done {
+    margin-top: 10px;
+    padding: 6px;
+    width: 100%;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Completed style */
+.complete {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: #f5f5f5;
+}
+
