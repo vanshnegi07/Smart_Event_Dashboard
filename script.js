@@ -14,3 +14,5 @@ button.addEventListener("click", function () {
     list.appendChild(div);
 });
 
+document.getElementById("name").value = "";
+document.getElementById("date").value = "";
