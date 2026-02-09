@@ -8,8 +8,12 @@ button.addEventListener("click", function () {
 
     let div = document.createElement("div");
 
-    div.innerHTML = "<h3>" + name + "</h3>" +
-                    "<p>" + date + "</p>";
+    list.addEventListener("click", function(e){
+    if(e.target.classList.contains("remove")){
+        e.target.parentElement.remove();
+    }
+});
+
 
     list.appendChild(div);
 });
